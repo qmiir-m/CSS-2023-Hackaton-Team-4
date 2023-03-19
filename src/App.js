@@ -1,11 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import Recipes from './Components/Recipes'
+import SearchBar from './Components/SearchBar';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      <SearchBar />
       <Recipes />
+      
     </div>
   );
 }

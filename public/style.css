@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
+
+*{  
+    background-color: lightblue;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+button{
+    height: 36px;
+    background-color: steelblue;
+    border-radius: 1%;
+    border-color: steelblue;
+    color: white;
+}
+
+input {
+    background-color: rgb(213, 238, 247);
+    width: 20%;
+    height: 30px;
+    border-color: transparent;
+}
+
+p{
+    font-weight: 600;
+}
+

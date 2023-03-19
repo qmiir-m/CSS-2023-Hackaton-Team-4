@@ -5,19 +5,7 @@ function RecipeSearch() {
   const [query, setQuery] = useState('');
   const [recipes, setRecipes] = useState([]);
 
-  const fetchRecipes = () => {
-    axios.get("https://api.api-ninjas.com/v1/recipe?query=", {
-      headers: {
-        "X-Api-Key": "P+gKnOUU1wup1ghmrQJ7Pw==jG1HW9CLi3Jl8tTF"
-      }
-    }).then(response => {
-      console.log(response.data);
-      setRecipes(response.data)
-    })
-    .catch(error => {
-      console.error(error);
-    });
-  }
+  
 
   return (
   <div className="recipes">
@@ -32,7 +20,6 @@ function RecipeSearch() {
       ))}
     </div>
   )}
-  <button onClick={fetchRecipes}>Submmit</button>
 </div>
 );
 }
